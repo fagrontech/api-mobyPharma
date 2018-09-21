@@ -254,11 +254,19 @@
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<p>Seja bem-vindo a documentação da API mobyPharma.
+Este documento deve ser utilizado para integrar seu e-commerce com todas as operações disponíveis na API
+REST do mobyPharma desenvolvido pela Fagron Technologies.</p>
 
-<p>We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<p>Este componente é um serviço REST e utiliza HTTP para se comunicar. Esta tecnologia é amplamente
+utilizada no mercado, podemos citar empresas como Google, Facebook, LinkedIn, Netflix entre diversas
+outras que disponibilizam Web APIs para serem consumidas baseadas em HTTP com REST.
+O Web API, diferente do SOAP, não depende de XML para trafegar as informações, o formato padrão para
+isso é JSON (Java Script Object Notation).
+Saiba mais sobre REST aqui: http://pt.wikipedia.org/wiki/REST.</p>
 
-<p>This example API documentation page was created with <a href="https://github.com/lord/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
+<p>Para integrar uma nova loja virtual ao mobyPharma, é necessário disponibilizar os métodos via web service
+conforme descritos abaixo. Esses métodos serão consumidos pelo mobyPharma para manter o sincronismo de dados.Segue link com endereço de um WebService exemplo com a implementação completa que deve ser implementada.</p>
 <h1 id='authentication'>Authentication</h1>
 <blockquote>
 <p>To authorize, use this code:</p>
@@ -271,7 +279,7 @@
 <span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
 </code></pre><pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
 curl <span class="s2">"api_endpoint_here"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+  -H <span class="s2">"Authorization: Token"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
 
 <span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
